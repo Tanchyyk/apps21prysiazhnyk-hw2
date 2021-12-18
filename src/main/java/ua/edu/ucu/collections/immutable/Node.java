@@ -5,7 +5,8 @@ public class Node {
     private Node next;
     private Object value;
 
-    public Node() {
+    public Node(Object value) {
+        this.value = value;
     }
 
     @Override
@@ -15,24 +16,26 @@ public class Node {
 
 
     public Node getPrevious() {
-        return null;
+        return previous;
     }
 
     public void setPrevious(Node prev) {
+        this.previous = prev;
     }
 
     public Object getValue() {
-        return null;
+        return value;
     }
 
     public void setValue(Object val) {
+        this.value = val;
     }
 
     public Node getNext() {
-        return null;
+        return next;
     }
 
     public void setNext(Node ne) {
+        this.next = ne;
     }
 }
-
