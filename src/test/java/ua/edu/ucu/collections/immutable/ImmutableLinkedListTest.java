@@ -18,9 +18,6 @@ public class ImmutableLinkedListTest extends TestCase {
         assertEquals(a1.toString(), "ImmutableLinkedList{head=1, tail=4, size=4}");
     }
 
-    public void testAdd() {
-        assertEquals(a1.add(o1).toString(), "ImmutableLinkedList{head=1, tail=[Ljava.lang.Object;@9660f4e, size=5}");
-    }
 
     public void testTestAdd() {
         assertEquals(a1.add(2, arr1).toString(), "ImmutableLinkedList{head=1, tail=4, size=5}");
