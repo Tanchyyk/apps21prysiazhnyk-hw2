@@ -6,14 +6,6 @@ public final class ImmutableArrayList implements ImmutableList {
     private Object[] array;
     private int arraySize;
 
-    @Override
-    public String toString() {
-        return "ImmutableArrayList{" +
-                "array=" + Arrays.toString(array) +
-                ", arraySize=" + arraySize +
-                '}';
-    }
-
     public ImmutableArrayList(Object[] elements) {
         this.array = Arrays.copyOf(elements, elements.length);
         this.arraySize = array.length;
@@ -22,6 +14,14 @@ public final class ImmutableArrayList implements ImmutableList {
     public ImmutableArrayList() {
         this.array = new Object[]{};
         this.arraySize = 0;
+    }
+
+    @Override
+    public String toString() {
+        return "ImmutableArrayList{" +
+                "array=" + Arrays.toString(array) +
+                ", arraySize=" + arraySize +
+                '}';
     }
 
     @Override

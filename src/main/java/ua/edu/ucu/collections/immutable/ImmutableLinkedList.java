@@ -7,15 +7,6 @@ public final class ImmutableLinkedList implements ImmutableList {
     private Node tail;
     private final int size;
 
-    @Override
-    public String toString() {
-        return "ImmutableLinkedList{" +
-                "head=" + head +
-                ", tail=" + tail +
-                ", size=" + size +
-                '}';
-    }
-
     public ImmutableLinkedList(Object[] elements) {
         this.size = elements.length;
         Node currNode = null;
@@ -33,7 +24,7 @@ public final class ImmutableLinkedList implements ImmutableList {
                 this.head = nextNode;
             }
 
-            if (i == elements.length - 1){
+            if (i == elements.length - 1) {
                 this.tail = nextNode;
             }
         }
@@ -47,13 +38,22 @@ public final class ImmutableLinkedList implements ImmutableList {
     }
 
     @Override
+    public String toString() {
+        return "ImmutableLinkedList{" +
+                "head=" + head +
+                ", tail=" + tail +
+                ", size=" + size +
+                '}';
+    }
+
+    @Override
     public ImmutableList add(Object e) {
-        return add(this.size, new Object[] {e});
+        return add(this.size, new Object[]{e});
     }
 
     @Override
     public ImmutableList add(int index, Object e) {
-        return addAll(index, new Object[] {e});
+        return addAll(index, new Object[]{e});
     }
 
     @Override

@@ -12,7 +12,7 @@ public class Stack {
                 '}';
     }
 
-    public Stack(){
+    public Stack() {
         this.linkedLst = new ImmutableLinkedList();
     }
 

@@ -12,9 +12,10 @@ public class Queue {
                 '}';
     }
 
-    public Queue(){
+    public Queue() {
         this.linkedLst = new ImmutableLinkedList();
     }
+
     public Object peek() {
         return linkedLst.getFirst();
     }
