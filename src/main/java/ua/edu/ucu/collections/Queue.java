@@ -5,15 +5,15 @@ import ua.edu.ucu.collections.immutable.ImmutableLinkedList;
 public class Queue {
     private ImmutableLinkedList linkedLst;
 
-    @Override
-    public String toString() {
-        return "Queue{" +
-                "linkedLst=" + linkedLst +
-                '}';
-    }
-
     public Queue() {
         this.linkedLst = new ImmutableLinkedList();
+    }
+
+    @Override
+    public String toString() {
+        return "Queue{"
+                + "linkedLst=" + linkedLst
+                + '}';
     }
 
     public Object peek() {

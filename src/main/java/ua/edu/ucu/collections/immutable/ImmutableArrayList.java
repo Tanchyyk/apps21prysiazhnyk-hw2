@@ -18,10 +18,10 @@ public final class ImmutableArrayList implements ImmutableList {
 
     @Override
     public String toString() {
-        return "ImmutableArrayList{" +
-                "array=" + Arrays.toString(array) +
-                ", arraySize=" + arraySize +
-                '}';
+        return "ImmutableArrayList{"
+                + "array=" + Arrays.toString(array)
+                + ", arraySize=" + arraySize
+                + '}';
     }
 
     @Override

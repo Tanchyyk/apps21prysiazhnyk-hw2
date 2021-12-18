@@ -39,11 +39,11 @@ public final class ImmutableLinkedList implements ImmutableList {
 
     @Override
     public String toString() {
-        return "ImmutableLinkedList{" +
-                "head=" + head +
-                ", tail=" + tail +
-                ", size=" + size +
-                '}';
+        return "ImmutableLinkedList{"
+                + "head=" + head
+                + ", tail=" + tail
+                + ", size=" + size
+                + '}';
     }
 
     @Override

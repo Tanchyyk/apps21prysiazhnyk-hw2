@@ -5,15 +5,15 @@ import ua.edu.ucu.collections.immutable.ImmutableLinkedList;
 public class Stack {
     private ImmutableLinkedList linkedLst;
 
-    @Override
-    public String toString() {
-        return "Stack{" +
-                "linkedLst=" + linkedLst +
-                '}';
-    }
-
     public Stack() {
         this.linkedLst = new ImmutableLinkedList();
+    }
+
+    @Override
+    public String toString() {
+        return "Stack{"
+                + "linkedLst=" + linkedLst
+                + '}';
     }
 
     public void push(Object e) {
